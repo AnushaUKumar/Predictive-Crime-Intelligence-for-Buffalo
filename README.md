@@ -85,14 +85,14 @@ results = client.get("d6g9-xbgu", limit=400000)
 df = pd.DataFrame.from_records(results)
 ```
 
-4.**Run the Backend**: 
+4. **Run the Backend**: 
 Use the Python script to train machine learning models and evaluate crime predictions.
 
 ``` bash
 python crime_predictor.py
 ```
 
-5.**Start the Streamlit Dashboard**: 
+5. **Start the Streamlit Dashboard**: 
 Launch the frontend dashboard for interactive crime predictions.
 ```bash
 streamlit run app.py
