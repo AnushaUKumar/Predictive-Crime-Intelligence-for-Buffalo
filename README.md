@@ -71,13 +71,13 @@ This project aims to:
    git clone https://github.com/YOUR_GITHUB_USERNAME/Buffalo-Crime-Dynamics.git
    cd Buffalo-Crime-Dynamics
    
-## Install Required Dependencies:
+2. **Install Required Dependencies**:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Download or Scrape the Data: Use the provided scraping code to pull real-time data from Buffalo's open data portal:
+3. **Download or Scrape the Data: Use the provided scraping code to pull real-time data from Buffalo's open data portal**:
 ```bash
 from sodapy import Socrata
 client = Socrata("data.buffalony.gov", None)
@@ -85,25 +85,26 @@ results = client.get("d6g9-xbgu", limit=400000)
 df = pd.DataFrame.from_records(results)
 ```
 
-## Usage
-Run the Backend: Use the Python script to train machine learning models and evaluate crime predictions.
+4.**Run the Backend**: 
+Use the Python script to train machine learning models and evaluate crime predictions.
 
 ``` bash
 python crime_predictor.py
 ```
 
-## Start the Streamlit Dashboard: Launch the frontend dashboard for interactive crime predictions.
-
+5.**Start the Streamlit Dashboard**: 
+Launch the frontend dashboard for interactive crime predictions.
 ```bash
 streamlit run app.py
 ```
 
-## Access the Dashboard: Open your browser and go to:
+6. **Access the Dashboard**:
+Open your browser and go to:
 ```bash
 http://localhost:8501
 ```
 
-## Making Predictions:
+7. **Making Predictions**:
 
 - Input date, time, and ZIP code into the dashboard.
 - Select the incident type and district to receive a crime prediction.
